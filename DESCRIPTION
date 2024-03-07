@@ -1,0 +1,25 @@
+Package: KEPTED
+Type: Package
+Title: Kernel-Embedding-of-Probability Test for Elliptical Distribution (KEPTED)
+Version: 0.1.0
+Authors@R: c(person("Yin", "Tang", email="yqt5219@psu.edu", role=c("aut","cre")),
+    person("Bing","Li", email="bxl9@psu.edu", role=c("aut")))
+Maintainer: Yin Tang <yqt5219@psu.edu>
+Description: Provides an implementation of a kernel-embedding of probability 
+    test for elliptical distribution. This is an asymptotic test for elliptical 
+    distribution under general alternatives, and the location and shape parameters 
+    are assumed to be unknown. Some side-products are posted, including the 
+    transformation between rectangular and polar coordinates and two 
+    product-type kernel functions.
+    Reference: Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical 
+    distribution based on kernel embedding of probabilities.” 
+    Link: https://arxiv.org/abs/2306.10594
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+    expm,
+    CompQuadForm,
+    cubature,
+    stats
