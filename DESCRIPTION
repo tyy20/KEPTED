@@ -14,8 +14,8 @@ Description: Provides an implementation of a kernel-embedding of probability
     Reference: Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical 
     distribution based on kernel embedding of probabilities.” 
     Link: https://arxiv.org/abs/2306.10594.
-License: GPL (>= 3)
 Encoding: UTF-8
+License: BSD_3_clause + file LICENSE
 LazyData: true
 Imports:
     expm,

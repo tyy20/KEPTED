@@ -12,7 +12,7 @@ Provides an implementation of a kernel-embedding of probability test for ellipti
 
 Authors:
 \itemize{
-  \item Bing Li \email{bxl9@psu.edu}
+  \item Bing Li \email{bxl9@psu.edu} [copyright holder]
 }
 
 }
