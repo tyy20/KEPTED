@@ -14,7 +14,7 @@ including the transformation between rectangular and polar coordinates and
 two product-type kernel functions.
 }
 \references{
-\cite{Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical
+\cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 distribution based on kernel embedding of probabilities,”
 \url{https://arxiv.org/abs/2306.10594}}
 }

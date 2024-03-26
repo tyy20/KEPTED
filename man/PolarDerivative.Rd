@@ -19,7 +19,7 @@ theta=g(v), i.e., the transformation from the the rectangular coordinate
 representation of the directional vector to its angular representation.
 }
 \details{
-See Lemma 3 of Tang and Li (2023+).
+See Lemma 3 of Tang and Li (2024).
 }
 \examples{
 X=c(3,1,3)
@@ -28,7 +28,7 @@ PolarDerivative(V)
 
 }
 \references{
-\cite{Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical
+\cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 distribution based on kernel embedding of probabilities,”
 \url{https://arxiv.org/abs/2306.10594}}
 }

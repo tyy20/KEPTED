@@ -22,7 +22,7 @@ length of \code{X} and the \code{(d-1)}-dimensional vector \code{Theta}
 contains the \code{d-1} angles of \code{X}.
 }
 \details{
-The formula corresponds to theta=g(v) as in Lemma 1 of Tang and Li (2023+).
+The formula corresponds to theta=g(v) as in Lemma 1 of Tang and Li (2024).
 }
 \examples{
 X=c(3,1,3)
@@ -30,7 +30,7 @@ Rec2Polar(X)
 
 }
 \references{
-\cite{Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical
+\cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 distribution based on kernel embedding of probabilities,”
 \url{https://arxiv.org/abs/2306.10594}}
 }

@@ -50,7 +50,7 @@ Same as the input if its input is nonzero.}
 }
 \description{
 This function gives a test on whether the data is elliptically distributed
-based on kernel embedding of probability. See Tang and Li (2023+) for
+based on kernel embedding of probability. See Tang and Li (2024) for
 details. Gaussian kernels and product-type inverse quadratic kernels are
 considered.
 }
@@ -82,7 +82,7 @@ EllKEPT(X)
 
 }
 \references{
-\cite{Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical
+\cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 distribution based on kernel embedding of probabilities,”
 \url{https://arxiv.org/abs/2306.10594}}
 }
