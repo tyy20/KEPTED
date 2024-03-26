@@ -7,13 +7,13 @@
 #' @param v A \code{d}-dimensional directional vector of length 1.
 #'
 #' @details
-#' See Lemma 3 of Tang and Li (2023+).
+#' See Lemma 3 of Tang and Li (2024).
 #'
 #' @return The Jacobian matrix of the polar transformation theta=g(v), with
 #' \code{d-1} rows and \code{d} columns.
 #'
 #' @references
-#' \cite{Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical
+#' \cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 #' distribution based on kernel embedding of probabilities,”
 #' \url{https://arxiv.org/abs/2306.10594}}
 #'

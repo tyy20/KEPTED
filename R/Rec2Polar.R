@@ -9,14 +9,14 @@
 #' \code{X} is \code{d}.
 #'
 #' @details
-#' The formula corresponds to theta=g(v) as in Lemma 1 of Tang and Li (2023+).
+#' The formula corresponds to theta=g(v) as in Lemma 1 of Tang and Li (2024).
 #'
 #' @return A list of the following:
 #' \item{R}{The length of \code{X}.}
 #' \item{Theta}{A vector of length \code{d-1}, containing the angles of \code{X}.}
 #'
 #' @references
-#' \cite{Tang, Y. and Li, B. (2023+), “A nonparametric test for elliptical
+#' \cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 #' distribution based on kernel embedding of probabilities,”
 #' \url{https://arxiv.org/abs/2306.10594}}
 #'
