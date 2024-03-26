@@ -1,6 +1,8 @@
 Package: KEPTED
 Type: Package
 Title: Kernel-Embedding-of-Probability Test for Elliptical Distribution
+URL: https://github.com/tyy20/KEPTED
+BugReports: https://github.com/tyy20/KEPTED/issues
 Version: 0.1.0
 Authors@R: c(person("Yin", "Tang", email="yqt5219@psu.edu", role=c("aut","cre")),
     person("Bing","Li", email="bxl9@psu.edu", role=c("cph","aut")))
