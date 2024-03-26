@@ -1,0 +1,39 @@
+---
+title: "KEPTED"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{KEPTED}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(KEPTED)
+```
+
+
+This package provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is a guide to perform the asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. 
+
+To conduct the test for elliptical distribution, we can directly use the EllKEPT function as follows.
+
+```{r}
+n=200
+d=3
+
+## test under a null distribution
+X=matrix(rnorm(d*n),nrow=n,ncol=d)
+EllKEPT(X,kerU="Gaussian",kerTheta="Gaussian")
+EllKEPT(X,kerU="PIQ",kerTheta="PIQ")
+
+## test under an alternative distribution
+X=matrix(rchisq(d*n,2),nrow=n,ncol=d)
+EllKEPT(X,kerU="Gaussian",kerTheta="Gaussian")
+EllKEPT(X,kerU="PIQ",kerTheta="PIQ")
+```

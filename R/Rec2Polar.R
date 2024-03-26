@@ -10,6 +10,8 @@
 #'
 #' @details
 #' The formula corresponds to theta=g(v) as in Lemma 1 of Tang and Li (2024).
+#' See also Anderson (2003).
+#' Note that when \code{d=2}, \code{V} will be \code{(sin(Theta),cos(Theta))}.
 #'
 #' @return A list of the following:
 #' \item{R}{The length of \code{X}.}
@@ -19,6 +21,8 @@
 #' \cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 #' distribution based on kernel embedding of probabilities,”
 #' \url{https://arxiv.org/abs/2306.10594}}
+#' \cite{Anderson, T. W. (2003). An Introduction to Multivariate Statistical
+#' Analysis. John Wiley & Suns, Inc. Huboken, New Jersey.}
 #'
 #' @examples
 #' X=c(3,1,3)
@@ -30,8 +34,10 @@ Rec2Polar=function(X){
   d=length(X)
   r=sqrt(sum(X^2))
   theta=rep(NA,d-1)
-  for(i in 1:(d-2)){
-    theta[i]=atan(X[i]/sqrt(sum(X[(i+1):d]^2)))
+  if(d>2){
+    for(i in 1:(d-2)){
+      theta[i]=atan(X[i]/sqrt(sum(X[(i+1):d]^2)))
+    }
   }
   theta[d-1]=atan2(X[d-1],X[d])
   list(R=r,Theta=theta)

@@ -11,6 +11,8 @@
 #'
 #' @details
 #' The formula corresponds to v=rho(theta) as in Lemma 1 of Tang and Li (2024).
+#' See also Anderson (2003).
+#' Note that when \code{d=2}, \code{V} will be \code{(sin(Theta),cos(Theta))}.
 #'
 #' @return A list of the following:
 #' \item{X}{A vector in rectangular coordinate.}
@@ -21,6 +23,8 @@
 #' \cite{Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical
 #' distribution based on kernel embedding of probabilities,”
 #' \url{https://arxiv.org/abs/2306.10594}}
+#' \cite{Anderson, T. W. (2003). An Introduction to Multivariate Statistical
+#' Analysis. John Wiley & Suns, Inc. Huboken, New Jersey.}
 #'
 #' @examples
 #' R=2
@@ -31,12 +35,16 @@
 
 Polar2Rec=function(R,Theta){
   d=length(Theta)+1
-  v=rep(0,d)
-  v[1]=sin(Theta[1])
-  for(i in 2:(d-1)){
-    v[i]=prod(cos(Theta[1:(i-1)]))*sin(Theta[i])
+  if(d==2){
+    v=c(sin(Theta),cos(Theta))
+  }else{
+    v=rep(0,d)
+    v[1]=sin(Theta[1])
+    for(i in 2:(d-1)){
+      v[i]=prod(cos(Theta[1:(i-1)]))*sin(Theta[i])
+    }
+    v[d]=prod(cos(Theta[1:(d-1)]))
   }
-  v[d]=prod(cos(Theta[1:(d-1)]))
   x=R*v
   list(X=x,V=v)
 }

@@ -33,10 +33,12 @@ PolarDerivative=function(v){
   }
   S=sqrt(S.sq)
   g.deriv=matrix(0,d-1,d)
-  for(i in 1:(d-2)){
-    g.deriv[i,i]=S[i+1]/S.sq[i]
-    for(k in (i+1):d){
-      g.deriv[i,k]=-v[i]*v[k]/(S.sq[i]*S[i+1])
+  if(d>2){
+    for(i in 1:(d-2)){
+      g.deriv[i,i]=S[i+1]/S.sq[i]
+      for(k in (i+1):d){
+        g.deriv[i,k]=-v[i]*v[k]/(S.sq[i]*S[i+1])
+      }
     }
   }
   g.deriv[d-1,d-1]=v[d]/S.sq[d-1]

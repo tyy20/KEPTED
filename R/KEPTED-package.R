@@ -1,5 +1,7 @@
-#' KEPTED: Kernel-Embedding-of-Probability Test for Elliptical Distribution
-#'
+#' @keywords internal
+"_PACKAGE"
+
+
 #' Provides an implementation of a kernel-embedding of probability test for
 #' elliptical distribution. This is an asymptotic test for elliptical
 #' distribution under general alternatives, and the location and shape
@@ -9,7 +11,6 @@
 #'
 #'
 #'
-#' @docType package
 #'
 #' @author
 #' Yin Tang \email{yqt5219@@psu.edu}
@@ -28,4 +29,6 @@
 #' @import stats
 #'
 #'
+## usethis namespace: start
+## usethis namespace: end
 NULL
