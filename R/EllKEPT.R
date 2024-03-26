@@ -52,9 +52,8 @@
 #' to avoid singularity.
 #'
 #' @examples
-#' \donttest{
 #' set.seed(313)
-#' n=200
+#' n=50
 #' d=3
 #'
 #' ## Null Hypothesis
@@ -64,7 +63,6 @@
 #' ## Alternative Hypothesis
 #' X=matrix(rchisq(n*d,2)-2,nrow=n,ncol=d)
 #' EllKEPT(X)
-#' }
 #'
 #' @export
 
