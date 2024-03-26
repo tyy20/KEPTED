@@ -5,7 +5,7 @@
 \alias{KEPTED-package}
 \title{KEPTED: Kernel-Embedding-of-Probability Test for Elliptical Distribution (KEPTED)}
 \description{
-Provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is an asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. Some side-products are posted, including the transformation between rectangular and polar coordinates and two product-type kernel functions. Reference: Tang, Y. and Li, B. (2024), “A nonparametric test for elliptical distribution based on kernel embedding of probabilities.” Link: https://arxiv.org/abs/2306.10594.
+Provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is an asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. Some side-products are posted, including the transformation between rectangular and polar coordinates and two product-type kernel functions. See Tang and Li (2024) \href{https://arxiv.org/abs/2306.10594}{arXiv:2306.10594} for details.
 }
 \author{
 \strong{Maintainer}: Yin Tang \email{yqt5219@psu.edu}
