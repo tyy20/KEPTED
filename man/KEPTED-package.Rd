@@ -3,7 +3,7 @@
 \docType{package}
 \name{KEPTED-package}
 \alias{KEPTED-package}
-\title{KEPTED: Kernel-Embedding-of-Probability Test for Elliptical Distribution (KEPTED)}
+\title{KEPTED: Kernel-Embedding-of-Probability Test for Elliptical Distribution}
 \description{
 Provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is an asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. Some side-products are posted, including the transformation between rectangular and polar coordinates and two product-type kernel functions. See Tang and Li (2024) \href{https://arxiv.org/abs/2306.10594}{arXiv:2306.10594} for details.
 }

@@ -69,7 +69,7 @@ to avoid singularity.
 }
 \examples{
 set.seed(313)
-n=200
+n=50
 d=3
 
 ## Null Hypothesis
