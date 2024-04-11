@@ -7,7 +7,7 @@ Version: 0.1.1
 Authors@R: c(person("Yin", "Tang", email="yqt5219@psu.edu", role=c("aut","cre")),
     person("Bing","Li", email="bxl9@psu.edu", role=c("cph","aut")))
 Maintainer: Yin Tang <yqt5219@psu.edu>
-Description: Provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is an asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. Some side-products are posted, including the transformation between rectangular and polar coordinates and two product-type kernel functions. See Tang and Li (2024) <arXiv:2306.10594> for details.
+Description: Provides an implementation of a kernel-embedding of probability test for elliptical distribution. This is an asymptotic test for elliptical distribution under general alternatives, and the location and shape parameters are assumed to be unknown. Some side-products are posted, including the transformation between rectangular and polar coordinates and two product-type kernel functions. See Tang and Li (2024) <doi:10.48550/arXiv:2306.10594> for details.
 Encoding: UTF-8
 License: BSD_3_clause + file LICENSE
 LazyData: true
