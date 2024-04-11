@@ -159,27 +159,32 @@ EllKEPT=function(X,eps=1e-6,kerU="Gaussian",kerTheta="Gaussian",gamma.U=0,gamma.
 
 
   norm.const=2*pi
-  for(j in 1:(d-2)){
-    norm.const=norm.const*integrate(
-      function(x){(cos(x))^(d-1-j)},
-      lower=-pi/2,
-      upper=pi/2,
-      abs.tol=1e-12)$value
+  if(d>2){
+    for(j in 1:(d-2)){
+      norm.const=norm.const*integrate(
+        function(x){(cos(x))^(d-1-j)},
+        lower=-pi/2,
+        upper=pi/2,
+        abs.tol=1e-12)$value
+    }
   }
+
 
   if(kerTheta=="Gaussian"){
     E.kernel.Theta=rep(1,n)
     for(i in 1:n){
-      for(j in 1:(d-2)){
-        E.kernel.Theta[i]=E.kernel.Theta[i]*
-          integrate(
-            function(x){
-              exp(-gamma.Theta*(Theta[i,j]-x)^2)*(cos(x))^(d-1-j)
-            },
-            lower=-pi/2,
-            upper=pi/2,
-            abs.tol=1e-12
-          )$value
+      if(d>2){
+        for(j in 1:(d-2)){
+          E.kernel.Theta[i]=E.kernel.Theta[i]*
+            integrate(
+              function(x){
+                exp(-gamma.Theta*(Theta[i,j]-x)^2)*(cos(x))^(d-1-j)
+              },
+              lower=-pi/2,
+              upper=pi/2,
+              abs.tol=1e-12
+            )$value
+        }
       }
       E.kernel.Theta[i]=E.kernel.Theta[i]*
         integrate(
